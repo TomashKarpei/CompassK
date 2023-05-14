@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:gravity="bottom"
+        app:srcCompat="@drawable/pointer" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/comapss_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:src="@drawable/compass"
+        app:layout_constraintDimensionRatio="1:1" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_location"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_degree"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:textSize="30sp" />
+
+
+
+
+</LinearLayout>
